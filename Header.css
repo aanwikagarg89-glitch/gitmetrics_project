@@ -1,0 +1,96 @@
+/* Header.css */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--glass-bg);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-bottom: 1px solid var(--glass-border);
+  box-shadow: 0 4px 20px var(--glass-shadow);
+}
+
+.header-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Brand */
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+}
+
+.brand-icon {
+  font-size: 1.6rem;
+  filter: drop-shadow(0 0 8px var(--accent-primary));
+}
+
+.brand-name {
+  font-size: 1.35rem;
+  font-weight: 800;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.02em;
+}
+
+/* Theme toggle */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 50px;
+  padding: 0.45rem 1rem;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.theme-toggle:hover {
+  background: var(--card-hover);
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+  transform: scale(1.03);
+}
+
+.theme-icon {
+  font-size: 1rem;
+}
+
+.theme-label {
+  font-size: 0.85rem;
+}
+
+@media (max-width: 480px) {
+  .theme-label {
+    display: none;
+  }
+
+  .theme-toggle {
+    padding: 0.45rem 0.7rem;
+  }
+
+  .brand-name {
+    font-size: 1.1rem;
+  }
+
+  .header-inner {
+    padding: 0 1rem;
+  }
+}
