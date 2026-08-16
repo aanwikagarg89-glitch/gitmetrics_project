@@ -1,0 +1,17 @@
+/* RepositoryList.css */
+
+.repo-list-section {
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.repo-list-section .section-title {
+  margin-bottom: 1.25rem;
+}
+
+.no-repos-msg {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-style: italic;
+  padding: 1rem 0;
+}

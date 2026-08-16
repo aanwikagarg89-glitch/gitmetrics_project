@@ -1,0 +1,21 @@
+/* LanguageChart.css */
+
+.chart-card {
+  padding: 1.5rem;
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.doughnut-wrapper {
+  height: 280px;
+  position: relative;
+}
+
+.chart-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-style: italic;
+}
