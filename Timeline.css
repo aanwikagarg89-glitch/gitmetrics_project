@@ -1,0 +1,50 @@
+/* Timeline.css */
+
+.timeline-card {
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.timeline-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.timeline-header .section-title {
+  margin-bottom: 0;
+}
+
+.timeline-summary {
+  display: flex;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.timeline-badge {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 50px;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  backdrop-filter: blur(8px);
+}
+
+.timeline-chart-wrapper {
+  height: 220px;
+  position: relative;
+}
+
+/* chart-empty shared from LanguageChart.css */
+
+@media (max-width: 600px) {
+  .timeline-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

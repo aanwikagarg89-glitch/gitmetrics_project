@@ -1,0 +1,9 @@
+/* StarsChart.css */
+
+.bar-wrapper {
+  height: 280px;
+  position: relative;
+}
+
+/* chart-card and chart-empty are shared in LanguageChart.css;
+   they are reused here via the same class names */
