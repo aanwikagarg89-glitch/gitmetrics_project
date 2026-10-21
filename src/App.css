@@ -5,6 +5,47 @@
   animation: fadeIn 0.4s ease;
 }
 
+/* Dashboard Action Toolbar (PDF + Refresh) */
+.dashboard-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+  padding: 0.6rem 1rem;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--border-radius-sm);
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.dashboard-toolbar-tag {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+.dashboard-toolbar-tag strong {
+  color: var(--accent-primary);
+}
+
+.dashboard-toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.dashboard-action-btn {
+  padding: 0.45rem 1rem !important;
+  font-size: 0.82rem !important;
+  border-radius: 50px !important;
+}
+
+.dashboard-pdf-btn {
+  box-shadow: 0 4px 15px var(--accent-glow);
+}
+
+
 /* ---- Charts Grid (Language + Stars side by side) ---- */
 .charts-grid {
   display: grid;

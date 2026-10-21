@@ -143,3 +143,25 @@
     justify-content: center;
   }
 }
+
+/* Validation styles */
+.search-box-invalid {
+  border-color: var(--error-color) !important;
+  box-shadow: 0 0 0 2px rgba(248, 81, 73, 0.25) !important;
+}
+
+.search-validation-message {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--error-color);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0 0.5rem 0.5rem 0.5rem;
+  animation: fadeIn 0.2s ease;
+}
+
+.validation-icon {
+  font-size: 0.95rem;
+}
+
