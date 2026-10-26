@@ -1,0 +1,83 @@
+/* InputField.css — Styles for reusable input component */
+
+.form-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.form-label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.required-star {
+  color: var(--error-color);
+  font-weight: bold;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.input-icon-prefix {
+  position: absolute;
+  left: 14px;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+}
+
+.reusable-input {
+  width: 100%;
+  padding: 12px 14px;
+  background: var(--input-bg);
+  border: 1px solid var(--input-border);
+  border-radius: var(--border-radius-sm);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 0.95rem;
+  outline: none;
+  transition: var(--transition);
+}
+
+.reusable-input.has-prefix {
+  padding-left: 42px;
+}
+
+.reusable-input:focus {
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 3px var(--accent-glow);
+  background: var(--card-hover);
+}
+
+.reusable-input.input-error {
+  border-color: var(--error-color);
+  box-shadow: 0 0 0 3px rgba(248, 81, 73, 0.15);
+}
+
+.field-error-message {
+  font-size: 0.8rem;
+  color: var(--error-color);
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  animation: fadeIn 0.2s ease;
+}
+
+.field-helper-message {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
