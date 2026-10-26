@@ -1,0 +1,207 @@
+/* RateLimitBanner.css — Styles for quota tracking, stale warnings, and simulation */
+
+.rate-limit-wrapper {
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Stale cache alert */
+.stale-cache-alert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 1.25rem;
+  border-radius: var(--border-radius-sm);
+  background: rgba(210, 153, 34, 0.12);
+  border: 1px solid var(--warning-color);
+  color: var(--text-primary);
+  font-size: 0.88rem;
+  flex-wrap: wrap;
+}
+
+.alert-content {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+  min-width: 260px;
+}
+
+.alert-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.reset-hint {
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  margin-left: 4px;
+}
+
+.alert-refresh-btn {
+  padding: 0.35rem 0.9rem !important;
+  font-size: 0.8rem !important;
+  border-radius: 50px !important;
+  white-space: nowrap;
+}
+
+/* Quota bar */
+.quota-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.82rem;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.quota-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.quota-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.quota-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.dot-good {
+  background: var(--success-color);
+  box-shadow: 0 0 6px var(--success-color);
+}
+
+.dot-warning {
+  background: var(--warning-color);
+  box-shadow: 0 0 6px var(--warning-color);
+}
+
+.dot-danger {
+  background: var(--error-color);
+  box-shadow: 0 0 6px var(--error-color);
+}
+
+.quota-label {
+  color: var(--text-muted);
+}
+
+.quota-numbers {
+  color: var(--text-primary);
+}
+
+.quota-reset {
+  color: var(--text-muted);
+  font-size: 0.78rem;
+}
+
+.cached-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--input-bg);
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  color: var(--accent-primary);
+}
+
+.cache-refresh-btn {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: 0.75rem;
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: var(--transition);
+}
+
+.cache-refresh-btn:hover {
+  color: var(--accent-primary);
+}
+
+/* Sim toggle pill */
+.sim-toggle-pill {
+  background: var(--input-bg);
+  border: 1px solid var(--glass-border);
+  color: var(--text-secondary);
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: var(--transition);
+  font-family: inherit;
+}
+
+.sim-toggle-pill:hover {
+  background: var(--card-hover);
+  color: var(--text-primary);
+}
+
+.sim-toggle-pill.sim-active {
+  background: rgba(248, 81, 73, 0.15);
+  border-color: var(--error-color);
+  color: var(--error-color);
+  font-weight: 600;
+}
+
+/* Sim modal card */
+.sim-modal-card {
+  padding: 1.25rem;
+  border-radius: var(--border-radius-sm);
+  border-left: 4px solid var(--accent-primary);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.sim-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sim-modal-header h4 {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.sim-modal-close {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.sim-modal-text {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.sim-modal-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.sim-enable-btn,
+.sim-disable-btn {
+  padding: 0.4rem 1rem !important;
+  font-size: 0.82rem !important;
+  border-radius: 50px !important;
+}
